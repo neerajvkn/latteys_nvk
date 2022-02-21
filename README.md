@@ -4,7 +4,9 @@ App made by neeraj vk for latteys
 
 ### Requires
 
-Frappe, ERPNext, Last Records ( https://github.com/hrgadeha/last_records ) - master branch ( dc93beb )
+Frappe ( version -13 )  
+ERPNext( version -13 )  
+Last Records ( https://github.com/hrgadeha/last_records - master - dc93beb )
 
 ### Includes
 1. Final Sales Order Planning Report
