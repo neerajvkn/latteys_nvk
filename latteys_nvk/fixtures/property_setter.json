@@ -1,0 +1,23 @@
+[
+    {
+        "creation": "2022-02-21 19:14:03.971605",
+        "default_value": null,
+        "doc_type": "Auto Email Report",
+        "docstatus": 0,
+        "doctype": "Property Setter",
+        "doctype_or_field": "DocField",
+        "field_name": "frequency",
+        "idx": 0,
+        "modified": "2022-02-21 19:14:03.971605",
+        "modified_by": "Administrator",
+        "name": "Auto Email Report-frequency-options",
+        "owner": "Administrator",
+        "parent": null,
+        "parentfield": null,
+        "parenttype": null,
+        "property": "options",
+        "property_type": "Text",
+        "row_name": null,
+        "value": "Daily\nWeekdays\nWeekly\nMonthly\nAt Set Time"
+    }
+]

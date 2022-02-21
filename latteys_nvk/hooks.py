@@ -106,23 +106,28 @@ app_license = "MIT"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
+scheduler_events = {
+	# "cron": {
+	# 	"* * * * *": [
+	# 		"latteys_nvk.cron.auto_email_report.send_at_set_time"
+	# 	]
+	# },
 # 	"all": [
 # 		"latteys_nvk.tasks.all"
 # 	],
 # 	"daily": [
 # 		"latteys_nvk.tasks.daily"
 # 	],
-# 	"hourly": [
-# 		"latteys_nvk.tasks.hourly"
-# 	],
+	"hourly": [
+		"latteys_nvk.cron.auto_email_report.send_at_set_time"
+	],
 # 	"weekly": [
 # 		"latteys_nvk.tasks.weekly"
 # 	]
 # 	"monthly": [
 # 		"latteys_nvk.tasks.monthly"
 # 	]
-# }
+}
 
 # Testing
 # -------
@@ -179,3 +184,30 @@ user_data_fields = [
 # 	"latteys_nvk.auth.validate"
 # ]
 
+fixtures = [
+	{
+		"doctype": "Custom Field",
+		"filters": [
+			[
+				"name",
+				"in",
+				[
+					"Auto Email Report-ls_send_at_hour",
+					"Auto Email Report-ls_enabled",
+				],
+			],
+		],
+	},
+	{
+		"doctype": "Property Setter",
+		"filters": [
+			[
+				"name",
+				"in",
+				[
+					"Auto Email Report-frequency-options",
+				],
+			]
+		],
+	},
+]
