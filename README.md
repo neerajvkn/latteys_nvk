@@ -10,6 +10,7 @@ Last Records ( https://github.com/hrgadeha/last_records - master - dc93beb )
 
 ### Includes
 1. Final Sales Order Planning Report
+2. Final Purchase Order Planning Report
 
 ### Version Updates
 
