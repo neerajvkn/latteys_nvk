@@ -14,7 +14,7 @@ Last Records ( https://github.com/hrgadeha/last_records ) - master branch ( dc93
 # Version Updates
 
 1. 1.0.0 Added final purchase order planning report
-
+2. 1.0.1 Added final purchase order planning report
 #### License
 
 MIT
