@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include latteys_nvk *.css
+recursive-include latteys_nvk *.csv
+recursive-include latteys_nvk *.html
+recursive-include latteys_nvk *.ico
+recursive-include latteys_nvk *.js
+recursive-include latteys_nvk *.json
+recursive-include latteys_nvk *.md
+recursive-include latteys_nvk *.png
+recursive-include latteys_nvk *.py
+recursive-include latteys_nvk *.svg
+recursive-include latteys_nvk *.txt
+recursive-exclude latteys_nvk *.pyc
