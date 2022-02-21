@@ -56,6 +56,7 @@ def get_data(conditions, filters):
 			so.branch as branch,
 			so.customer_name as customer_name,
 			so.address_display as customer_address,
+			
 			soi.delivery_date as delivery_date,
 			so.name as sales_order,
 			so.status, so.customer, soi.item_code,
@@ -72,6 +73,7 @@ def get_data(conditions, filters):
 			soi.warehouse as warehouse,
 			so.company, soi.name,
 			soi.description as description,
+			(SELECT default_transporter from `tabCustomer` WHERE name = so.customer ) as transporter,
 			( 
 				SELECT content as comment FROM `tabComment` cm 
 				WHERE cm.comment_type = 'Comment' 
@@ -82,6 +84,7 @@ def get_data(conditions, filters):
 			`tabSales Order Item` soi
 		LEFT JOIN `tabSales Invoice Item` sii
 			ON sii.so_detail = soi.name and sii.docstatus = 1
+		
 		WHERE
 			soi.parent = so.name
 			and so.status not in ('Stopped', 'Closed', 'On Hold')
